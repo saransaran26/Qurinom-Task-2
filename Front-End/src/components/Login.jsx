@@ -19,7 +19,7 @@ function Login() {
     console.log("Clicked");
     
     try {
-      const res = await axios.post("http://localhost:4000/user/login", {
+      const res = await axios.post("https://qurinom-task-2.onrender.com/user/login", {
         email,
         password,
       });

@@ -23,7 +23,7 @@ function Update() {
     };
     try {
       const res = await axios.put(
-        `http://localhost:4000/product/${id}`,
+        `https://qurinom-task-2.onrender.com/product/${id}`,
         payload
       );
       console.log(res.data);
@@ -38,7 +38,7 @@ function Update() {
   useEffect(()=>{
     const updates = async() => {
       try {
-        const res = await axios.get(`http://localhost:4000/product/${id}`)
+        const res = await axios.get(`https://qurinom-task-2.onrender.com/product/${id}`)
         console.log("After get updates",res.data.name);
         setname(res.data.name)
         setquantity(res.data.quantity)

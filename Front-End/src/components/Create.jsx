@@ -22,7 +22,7 @@ function Create() {
     };
     try {
       const res = await axios.post(
-        "http://localhost:4000/product/postdata",
+        "https://qurinom-task-2.onrender.com/product/postdata",
         payload
       );
       console.log(res.data);

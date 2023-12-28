@@ -17,7 +17,7 @@ function Regsiter() {
     console.log("Clicked");
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/user/register", {
+      const res = await axios.post("https://qurinom-task-2.onrender.com/user/register", {
         email,
         password,
       });

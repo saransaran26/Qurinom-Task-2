@@ -17,7 +17,7 @@ function Home() {
   useEffect(()=>{
     setlbool(true)
     const findit = async()=>{
-      const res = await axios.get('http://localhost:4000/product')
+      const res = await axios.get('https://qurinom-task-2.onrender.com/product')
       console.log("ans",res.data);
       setdata(res.data)
       setfinal(res.data)

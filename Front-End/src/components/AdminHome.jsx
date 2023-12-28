@@ -17,7 +17,7 @@ function AdminHome() {
     
     const findit = async()=>{
     setlbool(true)
-      const res = await axios.get('http://localhost:4000/product')
+      const res = await axios.get('https://qurinom-task-2.onrender.com/product')
       //console.log("ans",res.data);
       setdata(res.data)
       setfinal(res.data)
@@ -29,7 +29,7 @@ function AdminHome() {
   const handleDelete = async(id) => {
     console.log("Clicked");
     try {
-      const res = await axios.delete(`http://localhost:4000/product/${id}`)
+      const res = await axios.delete(`https://qurinom-task-2.onrender.com/product/${id}`)
     console.log(res.data);
     setdel(true)
     setTimeout(()=>{
@@ -90,6 +90,7 @@ function AdminHome() {
         })}
         </div>
         {bool && <p className='text-3xl font-semibold text-center my-5'>No data found</p>}
+
       </div>:
       <div className="max-w-[1150px] mx-auto">
       <div className="mt-6">

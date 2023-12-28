@@ -17,7 +17,7 @@ function Adminregister() {
     console.log("Clicked");
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/admin/register", {
+      const res = await axios.post("https://qurinom-task-2.onrender.com/admin/register", {
         email,
         password,
       });

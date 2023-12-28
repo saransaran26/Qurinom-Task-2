@@ -19,7 +19,7 @@ function Adminlogin() {
     console.log("Clicked");
     
     try {
-      const res = await axios.post("http://localhost:4000/admin/login", {
+      const res = await axios.post("https://qurinom-task-2.onrender.com/admin/login", {
         email,
         password,
       });
